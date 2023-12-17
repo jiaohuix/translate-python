@@ -3,7 +3,9 @@
 from textwrap import wrap
 
 from .exceptions import InvalidProviderError
-from .providers import MyMemoryProvider, MicrosoftProvider, DeeplProvider, LibreProvider
+from .providers import MyMemoryProvider, MicrosoftProvider, DeeplProvider, \
+    LibreProvider, GoogleProvider, BaiduProvider, \
+    QcriProvider, NiutransProvider
 
 DEFAULT_PROVIDER = MyMemoryProvider
 TRANSLATION_API_MAX_LENGTH = 1000
@@ -13,6 +15,10 @@ PROVIDERS_CLASS = {
     'microsoft': MicrosoftProvider,
     'deepl': DeeplProvider,
     'libre': LibreProvider,
+    'google': GoogleProvider,
+    'baidu': BaiduProvider,
+    'qcri': QcriProvider,
+    'niutrans': NiutransProvider,
 }
 
 
